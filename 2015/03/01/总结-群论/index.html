@@ -1,0 +1,681 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta name="baidu-site-verification" content="JCx0LN6PTa" />
+  <meta charset="UTF-8">
+  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
+  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
+<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+  
+    <title>[总结] 群论,Burnside引理,Polya计数 | Tianxiang&#39;s home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="ztx">
+    
+    <meta name="description" content="前言　　最近花了几天时间学习了关于群论的一些东西, 现在总结一下.">
+    
+    
+    
+    
+    <link rel="alternate" href="atom.xml" title="Tianxiang&#39;s home" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/web.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            var _bdId ='0a1c06814e0c24fbeb14e43162d683fc';
+             hm.src = "//hm.baidu.com/hm.js?" + _bdId;
+             var s = document.getElementsByTagName("script")[0]; 
+             s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+
+  _st('install','4DsqG5nW7kejeyUeByRn');
+
+  
+</script>
+     
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Tianxiang&#39;s home">Tianxiang&#39;s home</a></h1>
+				<a class="blog-motto">私は少しずつ登る</a>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/categories/log">生活</a></li>
+					
+						<li><a href="/标签">标签</a></li>
+					
+						<li><a href="/分类">分类</a></li>
+					
+						<li><a href="/留言板">留言</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/About-Me">关于我</a></li>
+					
+					<li>
+					
+                                            <form class="search" action=http://zhannei.baidu.com/ces/search target="_blank">
+                                            <label>Search</label>
+                                        <input name="s" type="hidden" value= null ><input type="text" name="q" size="30" placeholder="搜索"><br>
+					
+					</li>
+				</ul>
+                            </nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/03/01/总结-群论/" title="[总结] 群论,Burnside引理,Polya计数" itemprop="url">[总结] 群论,Burnside引理,Polya计数</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="https://plus.google.com/107814421841922560000?rel=author" title="ztx" target="_blank" itemprop="author">ztx</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-02-28T16:00:00.000Z" itemprop="datePublished">Mar 1 2015</time>
+    更新日期:<time datetime="2015-03-14T02:58:27.193Z" itemprop="dateModified">Mar 14 2015</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#置换群与对称群"><span class="toc-number">2.</span> <span class="toc-text">置换群与对称群</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换"><span class="toc-number">2.1.</span> <span class="toc-text">置换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义"><span class="toc-number">2.1.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#置换的合成"><span class="toc-number">2.1.2.</span> <span class="toc-text">置换的合成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#置换的幂"><span class="toc-number">2.1.3.</span> <span class="toc-text">置换的幂</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#恒等置换"><span class="toc-number">2.1.4.</span> <span class="toc-text">恒等置换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#置换的逆"><span class="toc-number">2.1.5.</span> <span class="toc-text">置换的逆</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换群"><span class="toc-number">2.2.</span> <span class="toc-text">置换群</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-1"><span class="toc-number">2.2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性质"><span class="toc-number">2.2.2.</span> <span class="toc-text">性质</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对称"><span class="toc-number">2.3.</span> <span class="toc-text">对称</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-2"><span class="toc-number">2.3.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对称群"><span class="toc-number">2.4.</span> <span class="toc-text">对称群</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-3"><span class="toc-number">2.4.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#着色"><span class="toc-number">2.5.</span> <span class="toc-text">着色</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-4"><span class="toc-number">2.5.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性质-1"><span class="toc-number">2.5.2.</span> <span class="toc-text">性质</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#着色集"><span class="toc-number">2.6.</span> <span class="toc-text">着色集</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-5"><span class="toc-number">2.6.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#等价关系"><span class="toc-number">2.6.2.</span> <span class="toc-text">等价关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性质-2"><span class="toc-number">2.6.3.</span> <span class="toc-text">性质</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Burnside定理"><span class="toc-number">3.</span> <span class="toc-text">Burnside定理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#$G(c)$"><span class="toc-number">3.1.</span> <span class="toc-text">$G(c)$</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$C(f)$"><span class="toc-number">3.2.</span> <span class="toc-text">$C(f)$</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定理1"><span class="toc-number">3.3.</span> <span class="toc-text">定理1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推论1"><span class="toc-number">3.4.</span> <span class="toc-text">推论1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定理2(burnside定理)"><span class="toc-number">3.5.</span> <span class="toc-text">定理2(burnside定理)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例子"><span class="toc-number">3.6.</span> <span class="toc-text">例子</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Polya定理"><span class="toc-number">4.</span> <span class="toc-text">Polya定理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#循环"><span class="toc-number">4.1.</span> <span class="toc-text">循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Polya计数公式"><span class="toc-number">4.2.</span> <span class="toc-text">Polya计数公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例子-1"><span class="toc-number">4.3.</span> <span class="toc-text">例子</span></a></li></ol></li></ol>
+		</div>
+		
+		<h1 id="前言">前言</h1><p>　　最近花了几天时间学习了关于群论的一些东西, 现在总结一下.</p>
+<a id="more"></a>
+<p>　　主要是通过看书<a href="http://www.hzbook.com/Books/6275.html" target="_blank" rel="external">《组合数学》</a>, 和参考博客<a href="http://www.cnblogs.com/DrunBee/" target="_blank" rel="external">DruuBee</a> Orz<br>　　这个总结会非常粗略, 我只会写一些必须的东西, 因为<del>画图太麻烦</del>时间仓促,所以例子会比较少,想要理解请多画图.</p>
+<h1 id="置换群与对称群">置换群与对称群</h1><h2 id="置换">置换</h2><h3 id="定义">定义</h3><p>通俗一点地讲:<br>如果我们有一个正方形, 它的四个顶点从左上角按照顺时针依次为$A,B,C,D$,我们将它顺时针旋转九十度,那么现在从左上角按照顺时针依次为$D,A,B,C$.我们把这种位置的交换叫做<strong>置换</strong>.</p>
+<p>专业一点的讲:<br>设$X$为有限集,为了方便我们取$X$为前$n$个正整数组成的集合(即$X=\lbrace 1,2,\dots,n\rbrace$).$X$的某一置换$i_1,i_2,\dots,i_n$可以看做$X$到其自身的一对一函数,其定义为</p>
+<p>$$f:X\to X$$</p>
+<p>其中</p>
+<p>$$f(1)=i_1,f(2)=i_2,\dots,f(n)=i_n$$</p>
+<p>我们可以将其表示为一种阵列的形式</p>
+<p>$$<br>\begin{pmatrix}<br>1 &amp; 2 &amp; \cdots &amp; n \\<br>i_1 &amp; i_2 &amp; \cdots &amp; i_n<br>\end{pmatrix}<br>$$</p>
+<p>在刚才的例子中我们将$A,B,C,D$写作$1,2,3,4$就可以得到如下置换</p>
+<p>$$<br>\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4 \\<br>4 &amp; 1 &amp; 2 &amp; 3<br>\end{pmatrix}<br>$$</p>
+<h3 id="置换的合成">置换的合成</h3><p>我们规定一种关于集合的运算<strong>合成</strong>,用符号 $\circ$ 表示.<br>例如</p>
+<p>$$<br>f=\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4 \\<br>3 &amp; 2 &amp; 4 &amp; 1<br>\end{pmatrix}<br>$$<br>$$<br>g=\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4 \\<br>2 &amp; 4 &amp; 3 &amp; 1<br>\end{pmatrix}<br>$$</p>
+<p>我们可以自己模拟一下得到如下结果</p>
+<p>$$<br>g\circ f=<br>\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4 \\<br>3 &amp; 4 &amp; 1 &amp; 2<br>\end{pmatrix}<br>$$</p>
+<p>$$<br>f\circ g=<br>\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4 \\<br>2 &amp; 1 &amp; 4 &amp; 3<br>\end{pmatrix}<br>$$</p>
+<p>上面的例子也说明了合成不满足<code>交换律</code></p>
+<p>但是它是满足<code>结合律</code>的,即<br>$$(f\circ g)\circ h = f\circ(g\circ h)$$</p>
+<h3 id="置换的幂">置换的幂</h3><p>我们通常用幂符号表示一个置换与它自身的合成:</p>
+<p>$$<br>f^1=f,f^2=f\circ f,f^3=f\circ f \circ f,\cdots,f^k=f\circ f\circ f\circ \cdots\circ f(k个f)<br>$$</p>
+<h3 id="恒等置换">恒等置换</h3><p><strong>恒等置换</strong>就是集合各个元素对应它本身的置换,我们记为$\iota$</p>
+<p>$$<br>\iota=\begin{pmatrix}1 &amp; 2 &amp; \cdots &amp; n \\<br>1 &amp; 2 &amp; \cdots &amp; n<br>\end{pmatrix}<br>$$</p>
+<p>显然</p>
+<p>$$<br>\iota\circ f=f\circ\iota<br>$$</p>
+<p>同时我们规定</p>
+<p>$$<br>f^0=\iota<br>$$</p>
+<h3 id="置换的逆">置换的逆</h3><p>我们定义<strong>置换的逆</strong>,这个脑补一下就会想到是怎么回事,我们记它为$f^{-1}$<br>再脑补一下可知</p>
+<p>$$<br>f\circ f^{-1} = f^{-1}\circ f = \iota<br>$$</p>
+<h2 id="置换群">置换群</h2><h3 id="定义-1">定义</h3><p>考虑一个多边形为正$n$边形</p>
+<p>我们定义如下形式的置换为$\rho_n$:</p>
+<p>$$<br>\rho_n=\begin{pmatrix}1 &amp; 2 &amp; \cdots &amp; n-1 &amp; n \\<br>2 &amp; 3 &amp; \cdots &amp; n &amp; 1<br>\end{pmatrix}<br>$$</p>
+<p>考虑一个多边形为正$n$边形,我们将它的一个顶点放置到最高的位置,并将这个位置叫做<code>起点</code>.从起点开始顺时针方向标号为$1,2,\cdots,n-1,n$<br>对这个多边形进行置换$\rho_n$的话,从起点开始顺时针方向标号依次变为$2,3,\cdots,n,1$<br>再次脑补一下,我们相当于将这个$n$边形逆时针<strong>旋转</strong>了$\frac{2\pi}{n}$后将$2$放在了起点上<br>显然对于旋转来讲,我们有$n$种不同的旋转方案,即$\rho_n^1,\rho_n^2,\rho_n^3,\cdots,\rho_n^n$.其中$\rho_n^n$相当于没有旋转,则可知</p>
+<p>$$<br>\rho_n^n=\rho_n^0=\iota<br>$$</p>
+<p>我们将这些不同的置换放在一个集合里,这个集合就被称为<strong>置换群</strong>,我们将这个置换群记作$G$.</p>
+<p>正$n$边形还有一种变换叫做<strong>反射</strong>(即以某条直线为轴翻转)<br>如正五边形以起点和起点对边中点所在直线为轴旋转的一个置换<br>$$<br>\tau=\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\<br>1 &amp; 5 &amp; 4 &amp; 3 &amp; 2<br>\end{pmatrix}<br>$$<br>显然类似这样的反射有五种,为了方便叙述,我们规定$\tau_i$表示将图形反射并将标号为$i$的点放在起点上.<br>此时<br>$$<br>G = \lbrace \rho_n^0=\iota,\rho_n^1,\rho_n^2,\rho_n^3,\rho_n^4,\tau_1,\tau_2,\tau_3,\tau_4,\tau_5 \rbrace<br>$$<br>其实变换并不止<code>旋转</code>与<code>反射</code>:<br>如果规定操作合理,你可以将两个角剪下来并交换位置,这也是一种变换,只不过一般不会出现这种情况.<br>而且,<code>旋转</code>与<code>反射</code>并不是一定存在的:<br>例如对于立体图形来就这两个操作就不好描述了,所以并不是所有的几何图形都有<code>旋转</code>与<code>反射</code>;而且有时会人为规定<code>反射</code>不可取或<code>旋转</code>不可取.</p>
+<h3 id="性质">性质</h3><p>不加证明地给出置换群满足的三条性质:</p>
+<ul>
+<li><strong>合成运算的封闭性</strong>:对$G$中的每一个置换$f$与$g$,$f\circ g$也属于$G$.</li>
+<li><strong>单位元</strong>:恒等置换$\iota$属于$G$</li>
+<li><strong>逆元的封闭性</strong>:对$G$中的每一个置换$f$,它的逆元$f^{-1}$也属于$G$<br>可知上面正五边形的$G$满足这三条性质,因此上面的$G$是一个置换群</li>
+</ul>
+<h2 id="对称">对称</h2><h3 id="定义-2">定义</h3><p>设$\Omega$为一几何图形(也许是多维的),$\Omega$到它自身的一个运动或全等对称成为$\Omega$的一个<strong>对称</strong>.显然上面正五边形的$G$中每一个置换都是一个对称.</p>
+<h2 id="对称群">对称群</h2><h3 id="定义-3">定义</h3><p>对一个集合的一些对称置换的<em>置换群</em> 叫做<strong>对称群</strong>.</p>
+<h2 id="着色">着色</h2><h3 id="定义-4">定义</h3><p>$X$的一种着色是给$X$的每一个元素指定一种颜色的分配方案.<br>我们设一种着色方案为$c$,元素$i$的颜色表示为$c_i$.</p>
+<h3 id="性质-1">性质</h3><p>我们考虑一个着色$c$与一个置换$f$的关系.<br>定义$f*c$为使得一个集合的着色$c$按照置换$f$转移.<br>例如<br>$$<br>c=\begin{pmatrix}a &amp; b &amp; c &amp; d &amp; e<br>\end{pmatrix}<br>$$<br>$$<br>f=\begin{pmatrix}1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\<br>1 &amp; 5 &amp; 4 &amp; 3 &amp; 2<br>\end{pmatrix}<br>$$<br>则<br>$$<br>f*c=\begin{pmatrix}a &amp; e &amp; d &amp; c &amp; b<br>\end{pmatrix}<br>$$<br>下面考虑$\circ$运算与$*$运算的关系<br>$$<br>(g\circ f)*c=g*(f*c)<br>$$</p>
+<h2 id="着色集">着色集</h2><h3 id="定义-5">定义</h3><p>顾名思义,着色集即对一个集合一些着色方案的集合,记为$C$</p>
+<h3 id="等价关系">等价关系</h3><p>如果$c_1$在$G$的某个置换作用下得到了$c_2$,我们就称$c_1$与$c_2$是等价的,记作<br>$$c_1 \sim c_2$$</p>
+<h3 id="性质-2">性质</h3><p>对于$G$中的任意元$f$,$f*c$仍然属于$C$<br>关于等价关系有以下三条性质</p>
+<ul>
+<li><strong>自反性</strong>: 对于任意的$c$,$c\sim c$</li>
+<li><strong>对称性</strong>: 如果$c_1\sim c_2$,则$c_2\sim c_1$</li>
+<li><strong>传递性</strong>: 如果$c_1\sim c_2$,且$c_2\sim c_3$,则$c_1\sim c_3$</li>
+</ul>
+<p>注意等价将$C$中的着色划分成若干部分,使得所有等价的着色在同一个部分.</p>
+<h1 id="Burnside定理">Burnside定理</h1><p>设$G$是作用于$X$上的置换群,$C$是对$X$的染色集,且$G$作用于$C$上,即任意$f$与$c$,有$$f*c\in C$$</p>
+<h2 id="$G(c)$">$G(c)$</h2><p>对于一个着色$c$我们可以选择一些置换,使得这些置换中任意一个$f$有<br>$$f*c=c$$</p>
+<p>我们把这个置换的集合记作$G(c)$,即使得着色$c$不变的$G$中所有置换的集合,也称之为着色$c$的<strong>稳定核</strong>.</p>
+<h2 id="$C(f)$">$C(f)$</h2><p>对于一个置换$f$我们可以选择一些着色,使得这些着色中任意一个$c$有<br>$$f*c=c$$</p>
+<p>我们把这个着色集合记作$C(f)$.</p>
+<h2 id="定理1">定理1</h2><blockquote>
+<p>对于每一种着色$c$,$G(c)$也是一个置换群,而且对于$G$中的任意置换$f$与$g$,$g*c=f*c$当且仅当$f^{-1}\circ g\in G$</p>
+</blockquote>
+<p>证明略</p>
+<h2 id="推论1">推论1</h2><blockquote>
+<p>$C$中与$c$等价的着色数等于$G$中置换的个数除以$c$的稳定核中的置换个数,即<br>$$<br>|\lbrace f*c:f\in G\rbrace|=\frac{|G|}{|G(c)|}<br>$$</p>
+</blockquote>
+<p>　</p>
+<blockquote>
+<p><strong>证明</strong><br>　　对于任意一个$G$中的置换$f$,若存在<br>$$<br>g*c=f*c<br>$$<br>则其中的$g$实际上为<br>$$<br>\lbrace f\circ h:h\in G(c)\rbrace<br>$$<br>易知上面集合中的置换个数实际上等于$|G(c)|$,从而对每一个$f$都有$|G(c)|$个置换作用在$c$上与$f$有相同效果.总共有$|G|$个置换,所以,与c等价的着色方案数<br>$$<br>|\lbrace f*c:f\in G\rbrace|<br>$$<br>等于<br>$$<br>\frac{|G|}{|G(c)|}<br>$$<br><strong>证毕.</strong></p>
+</blockquote>
+<h2 id="定理2(burnside定理)">定理2(burnside定理)</h2><blockquote>
+<p>设$G$是$X$的置换群,而$C$是$X$中一个满足下面条件的着色集合:对于$G$中所有的$f$和$C$中的所有$c$都有$f*c$仍在$C$中,则$C$中非等价着色数$N(G,C)$由下式给出<br>$$<br>N(G,C)=\frac{1}{|G|}\sum_{f\in G}|C(f)|<br>$$<br>换言之$C$中的非等价着色数等于在$G$下保持不变的着色的平均数.</p>
+</blockquote>
+<p>　</p>
+<blockquote>
+<p><strong>证明</strong><br>首先计数使$f$保持$c$不变的对偶$(f,c)$的个数.<br>方法一<br>$$<br>\sum_{f\in G}|C(f)|<br>$$<br>方法二<br>$$<br>\sum_{c\in C}|G(c)|<br>$$<br>我们让这两个式子相等<br>$$<br>\sum_{f\in G}|C(f)|=\sum_{c\in C}|G(c)|<br>$$<br>此时根据<strong>推论1</strong>得<br>$$<br>|G(c)|=\frac{|G|}{(与c等价的着色数)}<br>$$<br>因此,<br>$$<br>\sum_{c\in C} = |G|\cdot\sum_{c\in C}\frac{1}{(与c等价的着色数)}<br>$$<br>由于同一等价类中中的每个着色对上式的贡献都为<br>$$<br>\frac{1}{(与c等价的着色数)}<br>$$<br>那么同一等价类中的所有着色对上式的贡献和为$1$<br>,所以上式等于<br>$$<br>N(G,C)\cdot|G|<br>$$<br>那么,由第一个等式可以得到<br>$$<br>\sum_{f\in G}|C(f)|=N(G,C)\cdot|G|<br>$$<br>方程两侧同时除以$|G|$,得到<br>$$<br>N(G,C)=\frac{1}{|G|}\sum_{f\in G}|C(f)|<br>$$<br><strong>证毕</strong></p>
+</blockquote>
+<h2 id="例子">例子</h2><blockquote>
+<p>1.把$n$个不同的对象放在一个圆上,问有多少种放法(旋转后相同的放法视为同一种放法)?</p>
+<blockquote>
+<p>答:<br>$$<br>G=\lbrace\rho_n^0=\iota,\rho_n^1,\rho_n^2,\cdots,\rho_n^{n-1}\rbrace<br>$$<br>$$<br>N(G,C) = \frac{1}{n}(n!+0+0+\cdots+0)=(n-1)!<br>$$</p>
+</blockquote>
+<p>2.对红色与蓝色对正五边形进行染色,有多少种染色方法(旋转与翻转后相同视为同一种方法)?</p>
+<blockquote>
+<p>答:<br>$$<br>G=\lbrace\rho_5^0=\iota,\rho_5^1,\rho_5^2,\rho_5^3,\rho_5^4,\tau_5^1,\tau_5^2,\tau_5^3,\tau_5^4,\tau_5^5\rbrace<br>$$<br>$$<br>C(\rho_5^i)=\begin{cases}<br>32 &amp; i=0\\\\<br>2 &amp; i=1,2,3,4<br>\end{cases}<br>$$<br>$$<br>C(\tau_5^i) = 8 ,　i=1,2,3,4,5<br>$$<br>$$<br>N(G,C) = \frac{1}{10}(32+2+2+2+2+8+8+8+8+8)=8<br>$$</p>
+</blockquote>
+</blockquote>
+<h1 id="Polya定理">Polya定理</h1><h2 id="循环">循环</h2><p>记形如<br>$$<br>\begin{pmatrix}<br>a_1 &amp; a_2 &amp; a_3 &amp; \cdots &amp; a_{n-1} &amp; a_n \\<br>a_2 &amp; a_3 &amp; a_4 &amp; \cdots &amp; a_n &amp; a_1<br>\end{pmatrix}<br>$$<br>的一个置换为循环<br>每个置换都可以写为若干个循环的乘积<br>如<br>$$<br>\begin{pmatrix}<br>1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\<br>3 &amp; 5 &amp; 6 &amp; 4 &amp; 2 &amp; 1<br>\end{pmatrix}=<br>\begin{pmatrix}<br>1 &amp; 3 &amp; 6<br>\end{pmatrix}<br>\begin{pmatrix}<br>2 &amp; 5<br>\end{pmatrix}<br>\begin{pmatrix}<br>4<br>\end{pmatrix}<br>$$</p>
+<h2 id="Polya计数公式">Polya计数公式</h2><p>设函数$m(f)$为置换$f$的循环个数则有以下定理</p>
+<blockquote>
+<p>$$<br>N(G,C)=\frac{1}{|G|}\cdot\sum_{f\in G}k^{m(f)}<br>$$</p>
+</blockquote>
+<p>Polya定理在不同的题目中应用不同,下面以题目来说明.<br>以下题目解题思路参考博客<a href="http://www.cnblogs.com/DrunBee/" target="_blank" rel="external">DruuBee</a></p>
+<h2 id="例子-1">例子</h2><blockquote>
+<p><a href="http://zhangtianxiang.github.io/2015/01/01/poj2409/" target="_blank" rel="external">[poj] 2409: Let it Bead</a><br>用k种颜色对n个珠子构成的环上色, 旋转翻转后相同的只算一种, 求本质不同的着色方案数.</p>
+<blockquote>
+<p>对于表示翻转的置换的统计,请点入上面链接查看.<br>下面解释在统计表示旋转的置换时的公式<br>$$<br>\sum_{i=1}^{n}k^{gcd(n,i)}<br>$$<br>通俗的解释是:请手动画图找规律.<br>专业一点的解释:请打开黑书查看P252<br>下面引用<a href="http://www.cnblogs.com/DrunBee/archive/2012/09/10/2678378.html" target="_blank" rel="external">这里</a>的解释<br>假设起点在x，则x，x+i，x+2*i，……，x+k*i，……<br>假设在第t次，第一次回到起点，则x=(x+t*i)%n =&gt; t*i%n=0 =&gt; t=LCM(i,n)/i=n*i/GCD(n,i)/i=n/GCD(n,i)。<br>那么可以上n/t种颜色，即n/(n/GCD(n,i))种，所以旋转的着色方案有k^GCD(n,i)种。</p>
+</blockquote>
+<p><a href="http://zhangtianxiang.github.io/2015/01/01/poj2154/" target="_blank" rel="external">[poj] 2154: Color</a><br>用n种颜色对n个珠子构成的环上色, 旋转后相同的只算一种, 求本质不同的着色方案数</p>
+<blockquote>
+<p>分析请点入上面链接</p>
+</blockquote>
+<p><a href="http://zhangtianxiang.github.io/2015/01/01/poj2888/" target="_blank" rel="external">[poj] 2888: Magic Bracelet</a><br>对n个珠子构成的环染m种颜色, 并且规定一些颜色不能相邻. 旋转后相同算是同一种方案, 求本质不同的着色方案数.(m≤10,n≤109)</p>
+<blockquote>
+<p>分析请点入上面链接</p>
+</blockquote>
+</blockquote>
+<p>这是三道例题(不要怪我懒= =),更多例题请参考博客<a href="http://www.cnblogs.com/DrunBee/category/412343.html" target="_blank" rel="external">DrunBee</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/群论/">群论</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/summary/">summary</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://zhangtianxiang.github.io/2015/03/01/总结-群论/" data-title="[总结] 群论,Burnside引理,Polya计数 | Tianxiang&#39;s home" data-tsina="3943042110" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/03/16/CF336E/" title="[CF] 336E Vasily the Bear and Painting Square">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  [CF] 336E Vasily the Bear and Painting Square</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/03/01/bzoj1022/"  title="[bzoj] 1022: [SHOI2008]小约翰的游戏John">
+ <strong>NEXT:</strong><br/> 
+ <span>[bzoj] 1022: [SHOI2008]小约翰的游戏John
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	
+	<div class="ds-thread" data-title="[总结] 群论,Burnside引理,Polya计数" data-thread-key="总结-群论" data-author-key="ztx" data-url="http://zhangtianxiang.github.io/2015/03/01/总结-群论/"></div>
+	
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#置换群与对称群"><span class="toc-number">2.</span> <span class="toc-text">置换群与对称群</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换"><span class="toc-number">2.1.</span> <span class="toc-text">置换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义"><span class="toc-number">2.1.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#置换的合成"><span class="toc-number">2.1.2.</span> <span class="toc-text">置换的合成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#置换的幂"><span class="toc-number">2.1.3.</span> <span class="toc-text">置换的幂</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#恒等置换"><span class="toc-number">2.1.4.</span> <span class="toc-text">恒等置换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#置换的逆"><span class="toc-number">2.1.5.</span> <span class="toc-text">置换的逆</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换群"><span class="toc-number">2.2.</span> <span class="toc-text">置换群</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-1"><span class="toc-number">2.2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性质"><span class="toc-number">2.2.2.</span> <span class="toc-text">性质</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对称"><span class="toc-number">2.3.</span> <span class="toc-text">对称</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-2"><span class="toc-number">2.3.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对称群"><span class="toc-number">2.4.</span> <span class="toc-text">对称群</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-3"><span class="toc-number">2.4.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#着色"><span class="toc-number">2.5.</span> <span class="toc-text">着色</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-4"><span class="toc-number">2.5.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性质-1"><span class="toc-number">2.5.2.</span> <span class="toc-text">性质</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#着色集"><span class="toc-number">2.6.</span> <span class="toc-text">着色集</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-5"><span class="toc-number">2.6.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#等价关系"><span class="toc-number">2.6.2.</span> <span class="toc-text">等价关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性质-2"><span class="toc-number">2.6.3.</span> <span class="toc-text">性质</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Burnside定理"><span class="toc-number">3.</span> <span class="toc-text">Burnside定理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#$G(c)$"><span class="toc-number">3.1.</span> <span class="toc-text">$G(c)$</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$C(f)$"><span class="toc-number">3.2.</span> <span class="toc-text">$C(f)$</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定理1"><span class="toc-number">3.3.</span> <span class="toc-text">定理1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推论1"><span class="toc-number">3.4.</span> <span class="toc-text">推论1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定理2(burnside定理)"><span class="toc-number">3.5.</span> <span class="toc-text">定理2(burnside定理)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例子"><span class="toc-number">3.6.</span> <span class="toc-text">例子</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Polya定理"><span class="toc-number">4.</span> <span class="toc-text">Polya定理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#循环"><span class="toc-number">4.1.</span> <span class="toc-text">循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Polya计数公式"><span class="toc-number">4.2.</span> <span class="toc-text">Polya计数公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例子-1"><span class="toc-number">4.3.</span> <span class="toc-text">例子</span></a></li></ol></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+<div id="authorInfo">
+	
+		<div class="author-logo"></div>		
+	
+	<div class="social-list" class="clearfix">
+		
+		<a href="http://weibo.com/3943042110" target="_blank" title="weibo"></a>
+		
+		
+		
+		<a href="https://github.com/zhangtianxiang" target="_blank" title="github"></a>
+		
+		
+		<a href="https://www.facebook.com/tianxiang971016" target="_blank" title="facebook"></a>
+		
+		
+	</div>
+<div>
+<p class="asidetitle">Music</p>
+<embed src="http://www.xiami.com/widget/45574524_45574524_228_300_53a1b8_ffffff_0/reviewPlayer.swf" type="application/x-shockwave-flash" width="228" height="300" wmode="opaque"></embed></div>
+</div>
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+			<li><a href="/categories/bzoj/" title="bzoj">bzoj<sup>20</sup></a></li>
+		
+			<li><a href="/categories/cf/" title="cf">cf<sup>1</sup></a></li>
+		
+			<li><a href="/categories/hdu/" title="hdu">hdu<sup>2</sup></a></li>
+		
+			<li><a href="/categories/log/" title="log">log<sup>4</sup></a></li>
+		
+			<li><a href="/categories/pic/log/" title="log">log<sup>1</sup></a></li>
+		
+			<li><a href="/categories/pic/" title="pic">pic<sup>1</sup></a></li>
+		
+			<li><a href="/categories/poj/" title="poj">poj<sup>3</sup></a></li>
+		
+			<li><a href="/categories/spoj/" title="spoj">spoj<sup>1</sup></a></li>
+		
+			<li><a href="/categories/summary/" title="summary">summary<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="widget">
+  <p class="asidetitle">近期评论</p>
+    
+<ul class="entry ds-recent-comments" data-num-items="8" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="70"></ul>
+</div>
+
+
+  
+<div class="categorieslist">
+<p class="asidetitle">近期文章</p>
+  <ul class="entry">
+    
+      <li>
+        <a href="/3333/03/02/[置顶]题解还债计划/">[置顶]题解还债计划</a>
+      </li>
+    
+      <li>
+        <a href="/3333/02/02/[置顶]蒟蒻成长计划のbzoj100+/">[置顶]蒟蒻成长计划のbzoj 100+</a>
+      </li>
+    
+      <li>
+        <a href="/3333/02/01/[置顶]蒟蒻成长计划のbzoj200+/">[置顶]蒟蒻成长计划のbzoj 200+</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/28/[picture]saber/">[picture] saber !</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/26/bzoj3052/">[bzoj] 3052: [wc2013]糖果公园</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <div class="linkslist">
+<p class="asidetitle">友情鏈接</p>
+<ul>
+
+<li><a href="http://ydcydcy1.blog.163.com/" target="_blank" title="hexo">ydc orz</a></li>
+
+<li><a href="http://hzwer.com/" target="_blank" title="hexo">hzwer orz</a></li>
+
+<li><a href="http://www.cnblogs.com/iwtwiioi/" target="_blank" title="hexo">iwtwiioi orz</a></li>
+
+<li><a href="https://www.zybuluo.com/mdeditor" target="_blank" title="hexo">zybuluo</a></li>
+
+<li><a href="http://55242.github.io" target="_blank" title="hexo">jsx</a></li>
+
+<li><a href="http://drzdj.github.io" target="_blank" title="hexo">drzdj</a></li>
+
+<li><a href="http://fishclover.github.io/" target="_blank" title="hexo">wzfn</a></li>
+
+<li><a href="http://blog.163.com/lawyer_glass" target="_blank" title="hexo">phx</a></li>
+
+<li><a href="http://lzy-foenix.github.io/" target="_blank" title="hexo">lzy</a></li>
+
+
+</ul>
+</div>
+
+
+
+</aside>
+
+    </div>
+    <footer><div id="footer" >
+    
+            <p class="copyright"> © 2015 
+		
+		<a href="http://zhangtianxiang.github.io" target="_blank" title="ztx">ztx</a>
+		
+            && Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> && Theme by <a href="http://gengbiao.me" target="_blank" title="coney">coney</a>
+            </div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"zhangtianxiang"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<script>
+    
+        var _bdImg = '2';
+    
+    window._bd_share_config={
+        "common":{
+            "bdSnsKey":{
+
+            },
+            "bdText":"",
+            "bdMini":"2",
+            "bdMiniList":[
+                "qzone",
+                "tsina",
+                "weixin",
+                "renren",
+                "tqq",
+                "tieba",
+                "douban",
+                "sqq",
+                "diandian",
+                "huaban",
+                "youdao",
+                "mail",
+                "ty",
+                "fbook",
+                "twi",
+                "linkedin",
+                "copy",
+                "print"
+            ],
+            "bdPic":"",
+            "bdStyle":"0",
+            "bdSize":"16"
+        },
+        "slide":{
+            "type":"slide",
+            "bdImg":_bdImg,
+            "bdPos":"right",
+            "bdTop":"350"
+        },
+        "image":{
+            "viewList":[
+                "weixin",
+                "qzone",
+                "tsina",
+                "renren",
+                "douban",
+                "tqq"
+            ],
+            "viewText":"分享：",
+            "viewSize":"16"
+        },
+        "selectShare":{
+            "bdContainerClass":null,
+            "bdSelectMiniList":[
+                "weixin",
+                "qzone",
+                "tsina",
+                "renren",
+                "douban",
+                "tqq"
+            ]
+        }
+    };
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'null', 'null');  
+ga('send', 'pageview');
+</script>
+
+
+  <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
