@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2016/06/27/hello-world/</loc>
+    <lastmod>2016-06-27T11:08:30.897Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-06-27T11:08:30.897Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/04/06/cogs1583/</loc>
+    <lastmod>2015-04-06T23:23:30.700Z</lastmod>
+    <data>
+        <display>
+        <title>[cogs] 1583. [POJ3237]树的维护</title>
+        <pubTime>2015-04-06T12:00:00.000Z</pubTime>
+        
+        <tag>LCT</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/04/06/cogs1799/</loc>
+    <lastmod>2015-04-06T22:44:24.554Z</lastmod>
+    <data>
+        <display>
+        <title>[cogs] 1799. [国家集训队2012]tree(伍一鸣)</title>
+        <pubTime>2015-04-06T11:00:00.000Z</pubTime>
+        
+        <tag>LCT</tag>
+         
+         
+           
+             
+              <breadCrumb title="cogs" url="http://zhangtianxiang.github.io/categories/cogs/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/04/06/bzoj1036/</loc>
+    <lastmod>2015-04-06T22:24:41.095Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1036: [ZJOI2008]树的统计Count</title>
+        <pubTime>2015-04-06T11:00:00.000Z</pubTime>
+        
+        <tag>LCT</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/04/06/bzoj2049/</loc>
+    <lastmod>2015-04-06T22:21:10.551Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 2049: [Sdoi2008]Cave 洞穴勘测</title>
+        <pubTime>2015-04-06T10:00:00.000Z</pubTime>
+        
+        <tag>LCT</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/04/06/bzoj3754/</loc>
+    <lastmod>2015-04-06T06:54:38.634Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 3754: Tree之最小方差树</title>
+        <pubTime>2015-04-05T16:00:00.000Z</pubTime>
+        
+        <tag>生成树</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/3333/02/01/%5B%E7%BD%AE%E9%A1%B6%5D%E8%92%9F%E8%92%BB%E6%88%90%E9%95%BF%E8%AE%A1%E5%88%92%E3%81%AEbzoj200+/</loc>
+    <lastmod>2015-04-03T04:06:26.775Z</lastmod>
+    <data>
+        <display>
+        <title>[置顶]蒟蒻成长计划のbzoj 200+</title>
+        <pubTime>3333-01-31T16:00:00.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="log" url="http://zhangtianxiang.github.io/categories/log/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/28/%5Bpicture%5Dsaber/</loc>
+    <lastmod>2015-03-28T01:58:08.041Z</lastmod>
+    <data>
+        <display>
+        <title>[picture] saber !</title>
+        <pubTime>2015-03-27T16:00:00.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="pic" url="http://zhangtianxiang.github.io/categories/pic/"/>
+          
+             
+              <breadCrumb title="log" url="http://zhangtianxiang.github.io/categories/pic/log/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/26/bzoj3052/</loc>
+    <lastmod>2015-03-26T07:56:49.619Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 3052: [wc2013]糖果公园</title>
+        <pubTime>2015-03-25T19:00:00.000Z</pubTime>
+        
+        <tag>分块及莫队分块</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/26/spoj10707/</loc>
+    <lastmod>2015-03-26T07:29:35.906Z</lastmod>
+    <data>
+        <display>
+        <title>[spoj] 10707: Count on a tree II</title>
+        <pubTime>2015-03-25T18:00:00.000Z</pubTime>
+        
+        <tag>分块及莫队分块</tag>
+         
+         
+           
+             
+              <breadCrumb title="spoj" url="http://zhangtianxiang.github.io/categories/spoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/26/bzoj3757/</loc>
+    <lastmod>2015-03-26T07:27:15.409Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 3757: 苹果树</title>
+        <pubTime>2015-03-25T17:00:00.000Z</pubTime>
+        
+        <tag>分块及莫队分块</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/23/bzoj3258/</loc>
+    <lastmod>2015-03-23T12:59:34.080Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 3258: 秘密任务</title>
+        <pubTime>2015-03-23T12:00:00.000Z</pubTime>
+        
+        <tag>网络流</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/23/bzoj3257/</loc>
+    <lastmod>2015-03-23T12:54:46.933Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 3257: 树的难题</title>
+        <pubTime>2015-03-23T12:00:00.000Z</pubTime>
+        
+        <tag>树形dp</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/22/bzoj3166/</loc>
+    <lastmod>2015-03-22T09:08:55.320Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 3166: [Heoi2013]Alo</title>
+        <pubTime>2015-03-21T17:00:00.000Z</pubTime>
+        
+        <tag>可持久化Trie</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/1997/01/01/%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2015-03-22T09:00:25.817Z</lastmod>
+    <data>
+        <display>
+        <title>[置底]标签测试</title>
+        <pubTime>1996-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>01分数规划</tag>
+         
+        <tag>2-SAT</tag>
+         
+        <tag>AC自动机</tag>
+         
+        <tag>DLX</tag>
+         
+        <tag>FFT</tag>
+         
+        <tag>FWT</tag>
+         
+        <tag>KDtree</tag>
+         
+        <tag>KMP</tag>
+         
+        <tag>LCA</tag>
+         
+        <tag>LCT</tag>
+         
+        <tag>ST</tag>
+         
+        <tag>STL</tag>
+         
+        <tag>Trie</tag>
+         
+        <tag>cdq分治</tag>
+         
+        <tag>manacher</tag>
+         
+        <tag>prufer编码</tag>
+         
+        <tag>splay</tag>
+         
+        <tag>treap</tag>
+         
+        <tag>一般数学</tag>
+         
+        <tag>三分</tag>
+         
+        <tag>主席树</tag>
+         
+        <tag>二分与整体二分</tag>
+         
+        <tag>二分图</tag>
+         
+        <tag>其它</tag>
+         
+        <tag>其它dp与递推</tag>
+         
+        <tag>其它图论</tag>
+         
+        <tag>其它字符串</tag>
+         
+        <tag>其它思想</tag>
+         
+        <tag>其它搜索</tag>
+         
+        <tag>其它数据结构</tag>
+         
+        <tag>其它数论</tag>
+         
+        <tag>其它计算几何</tag>
+         
+        <tag>凸包</tag>
+         
+        <tag>分块与莫队分块</tag>
+         
+        <tag>半平面交</tag>
+         
+        <tag>单调性优化dp</tag>
+         
+        <tag>单调栈与单调队列</tag>
+         
+        <tag>博弈论</tag>
+         
+        <tag>可持久化Trie</tag>
+         
+        <tag>后缀数组</tag>
+         
+        <tag>后缀树</tag>
+         
+        <tag>后缀自动机</tag>
+         
+        <tag>哈希表</tag>
+         
+        <tag>容斥原理</tag>
+         
+        <tag>左偏树</tag>
+         
+        <tag>差分与前缀和</tag>
+         
+        <tag>差分约束</tag>
+         
+        <tag>平面图转对偶图</tag>
+         
+        <tag>并查集</tag>
+         
+        <tag>扫描线法</tag>
+         
+        <tag>排列组合</tag>
+         
+        <tag>数位dp</tag>
+         
+        <tag>斜率优化dp</tag>
+         
+        <tag>斯坦纳树</tag>
+         
+        <tag>旋转卡壳</tag>
+         
+        <tag>暴力</tag>
+         
+        <tag>替罪羊树</tag>
+         
+        <tag>最短路</tag>
+         
+        <tag>树上倍增</tag>
+         
+        <tag>树分治</tag>
+         
+        <tag>树套树</tag>
+         
+        <tag>树形dp</tag>
+         
+        <tag>树状数组</tag>
+         
+        <tag>树链剖分</tag>
+         
+        <tag>概率与期望</tag>
+         
+        <tag>模拟</tag>
+         
+        <tag>模运算</tag>
+         
+        <tag>欧拉函数</tag>
+         
+        <tag>母函数</tag>
+         
+        <tag>特殊搜索</tag>
+         
+        <tag>状压dp</tag>
+         
+        <tag>环套树</tag>
+         
+        <tag>生成树</tag>
+         
+        <tag>矩阵</tag>
+         
+        <tag>矩阵乘法</tag>
+         
+        <tag>线性规划</tag>
+         
+        <tag>线段树</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>群论</tag>
+         
+        <tag>联通分量</tag>
+         
+        <tag>莫比乌斯</tag>
+         
+        <tag>虚树</tag>
+         
+        <tag>贪心</tag>
+         
+        <tag>轮廓线dp与插头dp</tag>
+         
+        <tag>近似算法</tag>
+         
+        <tag>随机化</tag>
+         
+        <tag>高斯消元</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/22/bzoj2151/</loc>
+    <lastmod>2015-03-22T07:06:13.355Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 2151: 种树</title>
+        <pubTime>2015-03-21T16:00:00.000Z</pubTime>
+        
+        <tag>贪心</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/22/bzoj1150/</loc>
+    <lastmod>2015-03-22T07:00:04.807Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1150: [CTSC2007]数据备份Backup</title>
+        <pubTime>2015-03-21T16:00:00.000Z</pubTime>
+        
+        <tag>贪心</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/3333/03/02/%5B%E7%BD%AE%E9%A1%B6%5D%E9%A2%98%E8%A7%A3%E8%BF%98%E5%80%BA%E8%AE%A1%E5%88%92/</loc>
+    <lastmod>2015-03-22T05:55:19.036Z</lastmod>
+    <data>
+        <display>
+        <title>[置顶]题解还债计划</title>
+        <pubTime>3333-03-01T16:00:00.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="log" url="http://zhangtianxiang.github.io/categories/log/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/bzoj1001/</loc>
+    <lastmod>2015-03-19T13:27:05.459Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1001: [BeiJing2006]狼抓兔子</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>平面图转对偶图</tag>
+         
+        <tag>最短路</tag>
+         
+        <tag>网络流</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/19/bzoj3572/</loc>
+    <lastmod>2015-03-19T13:15:45.725Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 3572: [Hnoi2014]世界树</title>
+        <pubTime>2015-03-19T12:00:00.000Z</pubTime>
+        
+        <tag>虚树</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/18/bzoj3193/</loc>
+    <lastmod>2015-03-18T22:10:31.327Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 3193: [JLOI2013]地形生成</title>
+        <pubTime>2015-03-18T12:00:00.000Z</pubTime>
+        
+        <tag>其它dp与递推</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/poj2154/</loc>
+    <lastmod>2015-03-18T04:19:12.342Z</lastmod>
+    <data>
+        <display>
+        <title>[poj] 2154: Color</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>群论</tag>
+         
+         
+           
+             
+              <breadCrumb title="poj" url="http://zhangtianxiang.github.io/categories/poj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/bzoj1044/</loc>
+    <lastmod>2015-03-18T04:17:38.532Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1044: [HAOI2008]木棍分割</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>二分与整体二分</tag>
+         
+        <tag>其它dp与递推</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/bzoj1040/</loc>
+    <lastmod>2015-03-18T04:06:31.775Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1040: [ZJOI2008]骑士</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>树形dp</tag>
+         
+        <tag>环套树</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/18/bzoj1034/</loc>
+    <lastmod>2015-03-18T04:02:00.638Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1034: [ZJOI2008]泡泡堂BNB</title>
+        <pubTime>2015-03-17T16:00:00.000Z</pubTime>
+        
+        <tag>贪心</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/18/bzoj1029/</loc>
+    <lastmod>2015-03-18T03:58:48.791Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1029: [JSOI2007]建筑抢修</title>
+        <pubTime>2015-03-17T16:00:00.000Z</pubTime>
+        
+        <tag>贪心</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/18/bzoj1025/</loc>
+    <lastmod>2015-03-18T03:47:17.076Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1025: [SCOI2009]游戏</title>
+        <pubTime>2015-03-17T16:00:00.000Z</pubTime>
+        
+        <tag>其它dp与递推</tag>
+         
+        <tag>其它数论</tag>
+         
+        <tag>群论</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/01/bzoj1022/</loc>
+    <lastmod>2015-03-18T03:38:07.235Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1022: [SHOI2008]小约翰的游戏John</title>
+        <pubTime>2015-02-28T16:00:00.000Z</pubTime>
+        
+        <tag>博弈论</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/16/CF336E/</loc>
+    <lastmod>2015-03-16T06:52:55.844Z</lastmod>
+    <data>
+        <display>
+        <title>[CF] 336E Vasily the Bear and Painting Square</title>
+        <pubTime>2015-03-15T16:00:00.000Z</pubTime>
+        
+        <tag>状压dp</tag>
+         
+         
+           
+             
+              <breadCrumb title="cf" url="http://zhangtianxiang.github.io/categories/cf/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/03/01/%E6%80%BB%E7%BB%93-%E7%BE%A4%E8%AE%BA/</loc>
+    <lastmod>2015-03-14T02:58:27.193Z</lastmod>
+    <data>
+        <display>
+        <title>[总结] 群论,Burnside引理,Polya计数</title>
+        <pubTime>2015-02-28T16:00:00.000Z</pubTime>
+        
+        <tag>群论</tag>
+         
+         
+           
+             
+              <breadCrumb title="summary" url="http://zhangtianxiang.github.io/categories/summary/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/hdu4187/</loc>
+    <lastmod>2015-03-13T11:24:09.307Z</lastmod>
+    <data>
+        <display>
+        <title>[hdu] 4187: Alphabet Soup</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>群论</tag>
+         
+         
+           
+             
+              <breadCrumb title="hdu" url="http://zhangtianxiang.github.io/categories/hdu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/hdu2865/</loc>
+    <lastmod>2015-03-13T11:24:08.548Z</lastmod>
+    <data>
+        <display>
+        <title>[hdu] 2865: Birthday Toy</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>群论</tag>
+         
+         
+           
+             
+              <breadCrumb title="hdu" url="http://zhangtianxiang.github.io/categories/hdu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/poj2888/</loc>
+    <lastmod>2015-03-13T11:24:07.866Z</lastmod>
+    <data>
+        <display>
+        <title>[poj] 2888: Magic Bracelet</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>群论</tag>
+         
+         
+           
+             
+              <breadCrumb title="poj" url="http://zhangtianxiang.github.io/categories/poj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/poj2409/</loc>
+    <lastmod>2015-03-13T11:24:06.969Z</lastmod>
+    <data>
+        <display>
+        <title>[poj] 2409: Let it Bead</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>群论</tag>
+         
+         
+           
+             
+              <breadCrumb title="poj" url="http://zhangtianxiang.github.io/categories/poj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/bzoj1013/</loc>
+    <lastmod>2015-03-09T23:35:22.088Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1013: [JSOI2008]球形空间产生器sphere</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>高斯消元</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/bzoj1012/</loc>
+    <lastmod>2015-03-09T09:43:56.625Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1012: [JSOI2008]最大数maxnumber</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>树状数组</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/bzoj1008/</loc>
+    <lastmod>2015-03-09T09:35:28.675Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1008: [HNOI2008]越狱</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>排列组合</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2015/01/01/bzoj1003/</loc>
+    <lastmod>2015-03-09T09:35:20.081Z</lastmod>
+    <data>
+        <display>
+        <title>[bzoj] 1003: [ZJOI2006]物流运输trans</title>
+        <pubTime>2014-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>其它dp与递推</tag>
+         
+        <tag>最短路</tag>
+         
+         
+           
+             
+              <breadCrumb title="bzoj" url="http://zhangtianxiang.github.io/categories/bzoj/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/3333/02/02/%5B%E7%BD%AE%E9%A1%B6%5D%E8%92%9F%E8%92%BB%E6%88%90%E9%95%BF%E8%AE%A1%E5%88%92%E3%81%AEbzoj100+/</loc>
+    <lastmod>2015-02-27T11:12:49.047Z</lastmod>
+    <data>
+        <display>
+        <title>[置顶]蒟蒻成长计划のbzoj 100+</title>
+        <pubTime>3333-02-01T16:00:00.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="log" url="http://zhangtianxiang.github.io/categories/log/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zhangtianxiang.github.io/2014/12/31/%E5%9C%A8github%E4%B8%8A%E5%BC%80%E5%A7%8B%E6%96%B0%E7%9A%84%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2015-01-19T08:27:21.260Z</lastmod>
+    <data>
+        <display>
+        <title>在github上开始新的记录</title>
+        <pubTime>2014-12-30T16:00:00.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="log" url="http://zhangtianxiang.github.io/categories/log/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+</urlset>
