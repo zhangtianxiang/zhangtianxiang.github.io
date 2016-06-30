@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://zhangtianxiang.github.io/2015/03/28/%5Bpicture%5Dsaber/</loc>
     <lastmod>2016-06-29T13:00:20.109Z</lastmod>
@@ -261,196 +262,6 @@
     </data>
     </url>
 
-    
-  <url>
-    <loc>http://zhangtianxiang.github.io/1997/01/01/%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2015-03-22T09:00:25.817Z</lastmod>
-    <data>
-        <display>
-        <title>[置底]标签测试</title>
-        <pubTime>1996-12-31T16:00:00.000Z</pubTime>
-        
-        <tag>01分数规划</tag>
-         
-        <tag>2-SAT</tag>
-         
-        <tag>AC自动机</tag>
-         
-        <tag>DLX</tag>
-         
-        <tag>FFT</tag>
-         
-        <tag>FWT</tag>
-         
-        <tag>KDtree</tag>
-         
-        <tag>KMP</tag>
-         
-        <tag>LCA</tag>
-         
-        <tag>LCT</tag>
-         
-        <tag>ST</tag>
-         
-        <tag>STL</tag>
-         
-        <tag>Trie</tag>
-         
-        <tag>cdq分治</tag>
-         
-        <tag>manacher</tag>
-         
-        <tag>prufer编码</tag>
-         
-        <tag>splay</tag>
-         
-        <tag>treap</tag>
-         
-        <tag>一般数学</tag>
-         
-        <tag>三分</tag>
-         
-        <tag>主席树</tag>
-         
-        <tag>二分与整体二分</tag>
-         
-        <tag>二分图</tag>
-         
-        <tag>其它</tag>
-         
-        <tag>其它dp与递推</tag>
-         
-        <tag>其它图论</tag>
-         
-        <tag>其它字符串</tag>
-         
-        <tag>其它思想</tag>
-         
-        <tag>其它搜索</tag>
-         
-        <tag>其它数据结构</tag>
-         
-        <tag>其它数论</tag>
-         
-        <tag>其它计算几何</tag>
-         
-        <tag>凸包</tag>
-         
-        <tag>分块与莫队分块</tag>
-         
-        <tag>半平面交</tag>
-         
-        <tag>单调性优化dp</tag>
-         
-        <tag>单调栈与单调队列</tag>
-         
-        <tag>博弈论</tag>
-         
-        <tag>可持久化Trie</tag>
-         
-        <tag>后缀数组</tag>
-         
-        <tag>后缀树</tag>
-         
-        <tag>后缀自动机</tag>
-         
-        <tag>哈希表</tag>
-         
-        <tag>容斥原理</tag>
-         
-        <tag>左偏树</tag>
-         
-        <tag>差分与前缀和</tag>
-         
-        <tag>差分约束</tag>
-         
-        <tag>平面图转对偶图</tag>
-         
-        <tag>并查集</tag>
-         
-        <tag>扫描线法</tag>
-         
-        <tag>排列组合</tag>
-         
-        <tag>数位dp</tag>
-         
-        <tag>斜率优化dp</tag>
-         
-        <tag>斯坦纳树</tag>
-         
-        <tag>旋转卡壳</tag>
-         
-        <tag>暴力</tag>
-         
-        <tag>替罪羊树</tag>
-         
-        <tag>最短路</tag>
-         
-        <tag>树上倍增</tag>
-         
-        <tag>树分治</tag>
-         
-        <tag>树套树</tag>
-         
-        <tag>树形dp</tag>
-         
-        <tag>树状数组</tag>
-         
-        <tag>树链剖分</tag>
-         
-        <tag>概率与期望</tag>
-         
-        <tag>模拟</tag>
-         
-        <tag>模运算</tag>
-         
-        <tag>欧拉函数</tag>
-         
-        <tag>母函数</tag>
-         
-        <tag>特殊搜索</tag>
-         
-        <tag>状压dp</tag>
-         
-        <tag>环套树</tag>
-         
-        <tag>生成树</tag>
-         
-        <tag>矩阵</tag>
-         
-        <tag>矩阵乘法</tag>
-         
-        <tag>线性规划</tag>
-         
-        <tag>线段树</tag>
-         
-        <tag>网络流</tag>
-         
-        <tag>群论</tag>
-         
-        <tag>联通分量</tag>
-         
-        <tag>莫比乌斯</tag>
-         
-        <tag>虚树</tag>
-         
-        <tag>贪心</tag>
-         
-        <tag>轮廓线dp与插头dp</tag>
-         
-        <tag>近似算法</tag>
-         
-        <tag>随机化</tag>
-         
-        <tag>高斯消元</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
     
   <url>
     <loc>http://zhangtianxiang.github.io/2015/03/22/bzoj2151/</loc>
@@ -923,7 +734,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://zhangtianxiang.github.io/3333/02/02/%5B%E7%BD%AE%E9%A1%B6%5D%E8%92%9F%E8%92%BB%E6%88%90%E9%95%BF%E8%AE%A1%E5%88%92%E3%81%AEbzoj100+/</loc>
