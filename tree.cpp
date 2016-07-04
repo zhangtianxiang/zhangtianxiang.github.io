@@ -7,12 +7,17 @@
 ///////////////settings///////////////////
 const char address[100] = "http://zhangtianxiang.github.io" ;
 // 网站网址
-const char close[100] = "fa fa-chevron-right" ;
+const char close[100] = "fa fa-plus-square" ;
 // 标签关闭
-const char open[100] = "fa fa-chevron-down" ;
+const char open[100] = "fa fa-minus-square" ;
 // 标签打开
-const char item[100] = "fa fa-caret-right" ;
+const char item[100] = "fa fa-square-o" ;
 // 叶子节点
+
+// 图标的网址 http://fontawesome.io/icons/
+
+const char char_flag = '`' ;
+// 在tree.in中用于级别的符号
 // 不要忘了在主题文件中设置链接，要加着后缀.html
 //////////////////////////////////////////
 
@@ -50,7 +55,7 @@ inline void build(int dep,int par) {
 		}
 		if (fscanf(fin,"%s",Str)==EOF) { End = true ; continue ; }
 		i = Dep = 0 ;
-		while (Str[i++] == '$') Dep ++ ;
+		while (Str[i++] == char_flag) Dep ++ ;
 	}
 }
 
